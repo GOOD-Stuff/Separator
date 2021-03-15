@@ -1,0 +1,6 @@
+@Stefan That's fine logic if you discredit the standard library algorithms. Also, I was just referring to the tutorial (follow the link), in the good old spirit of teach a man how to fish. Finally, the answer was useful and has been accepted by the OP. I'm fine. (IOW Your comment doesn't focus on the merit, but dwells on your own apparent confusion with mainstream c++ idioms. You are free to provide a simplified answer :)) – sehe
+@
+,
+(
+)
+link

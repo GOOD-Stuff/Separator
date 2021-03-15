@@ -1,0 +1,6 @@
+When used immediately after whitespace-delimited input, e.g. after int n; std::cin >> n;, getline consumes the endline character left on the input stream by operator>>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); before switching to line-oriented input.
+ 
+.
+;
+>>
+,
