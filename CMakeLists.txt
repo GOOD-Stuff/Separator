@@ -9,11 +9,10 @@ set(Boost_USE_STATIC_LIBS ON)
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
 
-set(BOOST_ROOT ${BOOST_ROOT})#/home/vldmr/Projects/Git/boost_1_75_0/build)
-set(BOOST_INCLUDEDIR ${BOOST_INCLUDE}) #/home/vldmr/Projects/Git/boost_1_75_0/build/include/)
+set(BOOST_ROOT ${BOOST_ROOT})
+set(BOOST_INCLUDEDIR ${BOOST_INCLUDE})
 
 find_package(Boost 1.75.0 REQUIRED COMPONENTS system filesystem regex)
-#link_libraries(/home/vldmr/Projects/Git/boost_1_75_0/build/lib/)
 
 if(Boost_FOUND)
     message("Boost version: ${Boost_VERSION}")
