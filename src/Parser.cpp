@@ -59,18 +59,8 @@ std::string Parser::parse_lines(std::pair<std::string,
             return "";
 
         auto [src, delims] = src_delims;
-        for (const auto& del: delims) {
-            if (del.size() > 1) {
-                // escape boost::...::split_regex due to difficult regexp build
-                boost::algorithm::replace_all(src, del, "\n");
-                continue;
-            }
-
-            std::vector<std::string> lines;
-            boost::algorithm::split(lines, src, boost::is_any_of(del),
-                                    boost::token_compress_on);
-            src = boost::algorithm::join(lines, "\n");
-        }
+        for (const auto& del: delims)
+            boost::algorithm::replace_all(src, del, "\n");
 
         // remove all empty lines
         std::vector<std::string> lines;

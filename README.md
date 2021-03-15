@@ -13,16 +13,14 @@ For build:
 ```bash
 export BOOT_ROOT=<path to boost/build directory>
 export BOOT_INCLUDEDIR=<path to boost/build/include directory>
-mkdir Release
-cd Release
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make
+chmod +x build.sh
+./build.sh
 ```
 
 For launch:
 
 ```bash
-./separator input/ result.txt
+Release/separator input/ result.txt
 # or launch already compiled binary
 bin/separator input/ result.txt
 ```
