@@ -11,8 +11,8 @@ Build for Linux (kernel 4.15.0), x64.
 For build:
 
 ```bash
-export BOOT_ROOT=<path to boost/build directory>
-export BOOT_INCLUDEDIR=<path to boost/build/include directory>
+export BOOST_ROOT=<path to boost directory>
+export BOOST_INCLUDEDIR=<path to boost/include directory>
 chmod +x build.sh
 ./build.sh
 ```
